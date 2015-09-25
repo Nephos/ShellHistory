@@ -40,6 +40,11 @@ class ShellController < Nephos::Controller
     data
   end
 
+  # To implement
+  def get_render_html
+    File.read("app/views/data_view.html").gsub("/bash/data", "/" + self.class.to_s.gsub("Controller", "").downcase + "/data")
+  end
+
   public
   def data
     return {
@@ -51,7 +56,7 @@ class ShellController < Nephos::Controller
   end
 
   def root
-    return {html: File.read("app/data_view.html")}
+    return {html: get_render_html}
   end
 
 end
