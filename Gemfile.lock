@@ -4,6 +4,9 @@ GEM
     coderay (1.1.0)
     colorize (0.7.7)
     method_source (0.8.2)
+    nephos (1.0.1)
+      nephos-server (~> 0)
+      nomorebeer (~> 1.1)
     nephos-server (0.5.2)
       colorize (~> 0.7)
       nomorebeer (~> 1.1)
@@ -27,7 +30,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  nephos-server
+  nephos
   pry
   slim
 

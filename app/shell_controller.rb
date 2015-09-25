@@ -1,9 +1,9 @@
 require 'json'
 
-MAX_DEPTH = 4
+TO_DATA_MAX_DEPTH = 4
 
 def to_data_out(x, depth=0)
-  return [{name: x.first, size: x.size}] if depth == MAX_DEPTH
+  return [{name: x.first, size: x.size}] if depth == TO_DATA_MAX_DEPTH
   x = x.group_by{|tab| tab[0]}
   x.map do |name, content|
     # puts "Grouped with #{name}: "

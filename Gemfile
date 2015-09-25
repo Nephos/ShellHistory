@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'nephos-server'
+gem 'nephos'
 
 gem 'pry'
 gem 'slim'
