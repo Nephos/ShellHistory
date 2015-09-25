@@ -3,7 +3,7 @@
 simply type ``bundle install`` at root.
 then start the server with ``nserver``
 
-<img alt="screenshot" src="http://i.imgur.com/mzBufS6.png" width=800 />
+<img alt="screenshot" src="http://i.imgur.com/GIcZrdV.png" width=800 />
 
 # Usage
 
