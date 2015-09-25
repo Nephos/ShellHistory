@@ -1,7 +1,9 @@
 require_relative 'shell_controller'
 
 class BashController < ShellController
+
+  H_FILE = File.expand_path(".bash_history", ENV["HOME"])
   def get_history_list
-    File.read("/home/poulet_a/.bash_history").split("\n").select{|e| e.match(/\A\w/)}
+    File.read(H_FILE).split("\n").select{|e| e.match(/\A\w/)}
   end
 end
