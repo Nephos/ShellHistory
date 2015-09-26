@@ -1,6 +1,7 @@
 require 'json'
 
 TO_DATA_MAX_DEPTH = 4
+RENDER_MAX_ELEMENTS = 3000
 
 def to_data_out(x, depth=0)
   return [{name: x.first, size: x.size}] if depth == TO_DATA_MAX_DEPTH
@@ -35,7 +36,7 @@ class ShellController < Nephos::Controller
   # }
   def get_history
     h = get_history_list()
-    data = to_data_out(h.map(&:split))
+    data = to_data_out(h[-RENDER_MAX_ELEMENTS..-1].map(&:split))
     h = nil
     data
   end

@@ -3,11 +3,9 @@ resource "assets" do
 end
 
 get url: "/", controller: "BashController", method: "root"
-resource "bash" do
-  get url: "/data", controller: "BashController", method: "data"
-  get url: "/", controller: "BashController", method: "root"
-end
-resource "zsh" do
-  get url: "/data", controller: "ZshController", method: "data"
-  get url: "/", controller: "ZshController", method: "root"
+%w(bash zsh fish).each do |shell|
+  resource shell do
+    get url: "/data", controller: "#{shell.capitalize}Controller", method: "data"
+    get url: "/", controller: "#{shell.capitalize}Controller", method: "root"
+  end
 end
