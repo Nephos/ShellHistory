@@ -1,4 +1,5 @@
 require 'json'
+require_relative 'force_utf-8'
 
 TO_DATA_MAX_DEPTH = 4
 RENDER_MAX_ELEMENTS = 3000
