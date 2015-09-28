@@ -37,7 +37,7 @@ class ShellController < Nephos::Controller
   # }
   def get_history
     h = get_history_list()
-    data = to_data_out(h[-RENDER_MAX_ELEMENTS..-1].map(&:split))
+    data = to_data_out(h.reverse.shift(RENDER_MAX_ELEMENTS).map(&:split))
     h = nil
     data
   end
