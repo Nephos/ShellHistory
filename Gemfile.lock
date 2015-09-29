@@ -5,7 +5,7 @@ GEM
     nephos (1.0.1)
       nephos-server (~> 0)
       nomorebeer (~> 1.1)
-    nephos-server (0.5.2)
+    nephos-server (0.5.4)
       colorize (~> 0.7)
       nomorebeer (~> 1.1)
       puma (~> 2.13)
