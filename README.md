@@ -4,17 +4,26 @@
 The application requires ruby 2 or greater. (I recommand you [rbenv on github](https://github.com/sstephenson/rbenv) )
 
 It also requires bundle.
-If you did not already installed ``bundle``, then install them with ``gem install bundler``.
+If you did not already installed ``bundle``, then install them with:
+
+```
+gem install bundler
+```
 
 ## Application
 The, install the application:
 
-Simply type ``bundle install`` at the root directory.
+Simply type at the root directory:
+
+```
+bundle install
+```
+
 It will download the dependancies and install them.
 
 
 # Usage
-Start the server with the command ``nserver`` (``nserver -p``)
+Start the server with the command ``nserver`` (``nserver --help``)
 
 ## Fish user (The best of us)
 go to : [http://localhost:8080/fish](http://localhost:8080/fish)
