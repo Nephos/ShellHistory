@@ -2,10 +2,10 @@ GEM
   remote: https://rubygems.org/
   specs:
     colorize (0.7.7)
-    nephos (1.0.1)
+    nephos (1.0.3)
       nephos-server (~> 0)
       nomorebeer (~> 1.1)
-    nephos-server (0.5.4)
+    nephos-server (0.6.3)
       colorize (~> 0.7)
       nomorebeer (~> 1.1)
       puma (~> 2.13)
